@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -34,41 +34,43 @@
 
     .signature {
       position: absolute;
-      left: 4%;
-      right: 4%;
+      right: 5%;
       bottom: 7%;
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 28px;
     }
 
     .line {
+      width: 360px;
       height: 1px;
-      background: rgba(246, 240, 226, 0.52);
-      flex: 1;
+      background: rgba(246, 240, 226, 0.42);
     }
 
     .name {
       color: #f6f0e2;
-      font-family: "Bodoni Moda", Didot, serif;
-      font-size: 21px;
-      font-weight: 400;
-      letter-spacing: 0.20em;
+      font-family: "Cormorant", serif;
+      font-size: 29px;
+      font-weight: 300;
+      letter-spacing: 0.11em;
       text-transform: uppercase;
       white-space: nowrap;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .signature {
-        left: 7%;
         right: 7%;
         bottom: 6%;
         gap: 18px;
       }
 
+      .line {
+        width: 25vw;
+      }
+
       .name {
-        font-size: 17px;
-        letter-spacing: 0.17em;
+        font-size: 23px;
+        letter-spacing: 0.09em;
       }
     }
   </style>
